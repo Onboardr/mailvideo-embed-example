@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@mailvideo/embed': ^0.0.15
+  '@mailvideo/embed': ^0.0.16
   '@sveltejs/adapter-auto': ^2.0.0
   '@sveltejs/kit': ^1.14.0
   '@typescript-eslint/eslint-plugin': ^5.57.0
@@ -17,7 +17,7 @@ specifiers:
   vite: ^4.2.1
 
 dependencies:
-  '@mailvideo/embed': 0.0.15
+  '@mailvideo/embed': 0.0.16
 
 devDependencies:
   '@sveltejs/adapter-auto': 2.0.0_@sveltejs+kit@1.14.0
@@ -295,8 +295,8 @@ packages:
     resolution: {integrity: sha512-XPSJHWmi394fuUuzDnGz1wiKqWfo1yXecHQMRf2l6hztTO+nPru658AyDngaBe7isIxEkRsPR3FZh+s7iVa4Uw==}
     dev: true
 
-  /@mailvideo/embed/0.0.15:
-    resolution: {integrity: sha512-0BPLWVD7bkmh8cre+fqR3f+J265aUkvpzW+XaNKu1V5YD8CXv2KpGwKP8uvtHs4kmbOv5Xecu2Bygpdn7PPL0w==}
+  /@mailvideo/embed/0.0.16:
+    resolution: {integrity: sha512-xrG6D8xnxuNj/reWILuxACb1m4h1WFPSK+a38JgvrkJFRESvOOmnFegT1TTpGHnVSxQnYO5bJonphalDM0f10g==}
     dev: false
 
   /@nodelib/fs.scandir/2.1.5:
