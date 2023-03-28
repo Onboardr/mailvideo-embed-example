@@ -14,10 +14,9 @@
 			accountId,
 		});
 
-		const response = await mailvideo.insertVideo({
+		response = await mailvideo.insertVideo({
 			divElement: customContainer,
 		});
-		console.log('response', response);
 	};
 </script>
 

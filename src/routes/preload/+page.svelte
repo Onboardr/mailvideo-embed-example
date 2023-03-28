@@ -22,8 +22,7 @@
 	});
 
 	const openIframe = async () => {
-		const response = await mailvideo?.insertVideo({});
-		console.log('response', response);
+		response = await mailvideo?.insertVideo();
 	};
 </script>
 

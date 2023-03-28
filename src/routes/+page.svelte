@@ -13,7 +13,7 @@
 			accountId,
 		});
 
-		response = await mailvideo.insertVideo({});
+		response = await mailvideo.insertVideo();
 	};
 </script>
 
