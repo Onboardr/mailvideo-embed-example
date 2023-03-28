@@ -1,9 +1,9 @@
 <script lang="ts">
-	import { loadMailVideo, type InsertVideoResponse } from '@mailvideo/embed';
+	import { loadMailVideo, type PickVideoResponse } from '@mailvideo/embed';
 	import { getMailVideoOptions } from '$lib/utils';
 	import ResponseView from '$lib/ResponseView.svelte';
 
-	let response: InsertVideoResponse | undefined;
+	let response: PickVideoResponse | undefined;
 
 	const openIframe = async () => {
 		const { publishableKey, tenantId, accountId } = getMailVideoOptions();
@@ -13,7 +13,7 @@
 			accountId,
 		});
 
-		response = await mailvideo.insertVideo();
+		[response] = await mailvideo.pickVideo();
 	};
 </script>
 
