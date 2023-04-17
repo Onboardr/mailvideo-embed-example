@@ -12,6 +12,9 @@ export const getMailVideoOptions = (): {
 	const accountId = convertValue(searchParams.get('accountId'));
 
 	if (!publishableKey || !tenantId || !accountId) {
+		alert(
+			'Missing required parameters: publishableKey, tenantId, accountId',
+		);
 		throw new Error(
 			'Missing required parameters: publishableKey, tenantId, accountId',
 		);
@@ -24,7 +27,7 @@ export const getMailVideoOptions = (): {
 	};
 };
 
-const convertValue = (value: string | null) => {
+export const convertValue = (value: string | null) => {
 	if (!value) {
 		return;
 	}
