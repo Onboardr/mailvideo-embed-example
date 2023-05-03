@@ -2,8 +2,8 @@ lockfileVersion: '6.0'
 
 dependencies:
   '@mailvideo/embed':
-    specifier: ^0.0.23
-    version: 0.0.23
+    specifier: ^0.0.24
+    version: 0.0.24
 
 devDependencies:
   '@sveltejs/adapter-auto':
@@ -307,8 +307,8 @@ packages:
     resolution: {integrity: sha512-eF2rxCRulEKXHTRiDrDy6erMYWqNw4LPdQ8UQA4huuxaQsVeRPFl2oM8oDGxMFhJUWZf9McpLtJasDDZb/Bpeg==}
     dev: true
 
-  /@mailvideo/embed@0.0.23:
-    resolution: {integrity: sha512-JLDCaQoDwwml9WD5Q+Yl1yWSJVkBr6rC4K7twTJWslNDXUh5Es9qhvDDdW7fGQatsDHWF0nNSwFSkgchoV9z5w==}
+  /@mailvideo/embed@0.0.24:
+    resolution: {integrity: sha512-0b7FSD1Jdq/WOfAt1xm5sYwpjNmglrc+GYVnUnEVTXdiADwHj3rfjOH7Ri12ufPxt6+XKJlSWCRfJoeI5BaWqQ==}
     engines: {node: '>=10'}
     dev: false
 

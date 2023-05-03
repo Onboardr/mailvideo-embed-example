@@ -22,6 +22,6 @@
 		"vite": "^4.3.4"
 	},
 	"dependencies": {
-		"@mailvideo/embed": "^0.0.23"
+		"@mailvideo/embed": "^0.0.24"
 	}
 }
