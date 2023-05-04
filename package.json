@@ -8,7 +8,7 @@
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^2.0.1",
-		"@sveltejs/kit": "^1.15.9",
+		"@sveltejs/kit": "^1.15.11",
 		"@typescript-eslint/eslint-plugin": "^5.59.2",
 		"@typescript-eslint/parser": "^5.59.2",
 		"eslint": "^8.39.0",
@@ -22,6 +22,6 @@
 		"vite": "^4.3.4"
 	},
 	"dependencies": {
-		"@mailvideo/embed": "^0.0.24"
+		"@mailvideo/embed": "^0.0.25"
 	}
 }
