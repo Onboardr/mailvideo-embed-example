@@ -76,20 +76,16 @@
 						name: personName,
 				  }
 				: undefined;
-		if (company) {
-			return mailvideo.openAssociationLibrary({
-				company,
-				person,
-			});
-		}
-		if (person) {
-			return mailvideo.openAssociationLibrary({
-				company,
-				person,
-			});
+		if (!person && !company) {
+			return alert(
+				'companyId, companyName, personId, personName are required',
+			);
 		}
 
-		alert('companyId, companyName, personId, personName are required');
+		return mailvideo.openPlatform({
+			company,
+			person,
+		});
 	};
 </script>
 
