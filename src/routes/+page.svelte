@@ -18,6 +18,23 @@
 		console.log('pickVideo:response', response);
 	};
 
+	const pickVideoTemplate = async () => {
+		console.log('pickVideoTemplate');
+		const { publishableKey, tenantId, accountId } = getMailVideoOptions();
+		const mailvideo = await loadMailVideo({
+			publishableKey,
+			tenantId,
+			accountId,
+		});
+		const [video] = await mailvideo.pickVideoTemplate({
+			person: {
+				id: '{{personId}}',
+			},
+		});
+		response = video;
+		console.log('pickVideoTemplate:response', response);
+	};
+
 	const openPlatform = async () => {
 		console.log('openPlatform');
 		const { publishableKey, tenantId, accountId } = getMailVideoOptions();
@@ -90,6 +107,7 @@
 </script>
 
 <button on:click={pickVideo}>PickVideo</button>
+<button on:click={pickVideoTemplate}>PickVideoTemplate</button>
 <button on:click={openPlatform}>Open Platform</button>
 <button on:click={openAssociationLibrary}>Open Association Library</button>
 
