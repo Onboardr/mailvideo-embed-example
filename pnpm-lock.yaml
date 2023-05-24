@@ -2,8 +2,8 @@ lockfileVersion: '6.0'
 
 dependencies:
   '@mailvideo/embed':
-    specifier: ^0.0.32
-    version: 0.0.32
+    specifier: ^0.0.33
+    version: 0.0.33
 
 devDependencies:
   '@sveltejs/adapter-auto':
@@ -307,8 +307,8 @@ packages:
     resolution: {integrity: sha512-eF2rxCRulEKXHTRiDrDy6erMYWqNw4LPdQ8UQA4huuxaQsVeRPFl2oM8oDGxMFhJUWZf9McpLtJasDDZb/Bpeg==}
     dev: true
 
-  /@mailvideo/embed@0.0.32:
-    resolution: {integrity: sha512-nLiHUqgEnVRY4sCqGYjEJFtk//id0ZHjSiJRiV195Sg256H13kOA+X607juSYk+dV3Lrlp6up00vWQF7p1ebsg==}
+  /@mailvideo/embed@0.0.33:
+    resolution: {integrity: sha512-42MhgeWOvOOV53R7bIQujpJnDAaV/Fc8Fre/k6Qe4ReZlH3xA+hEB+DQr2QSSSbxR4Ip1e1FeXsK2fEfkFQ4Zw==}
     dev: false
 
   /@nodelib/fs.scandir@2.1.5:
