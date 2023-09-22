@@ -8,20 +8,20 @@
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^2.1.0",
-		"@sveltejs/kit": "^1.18.0",
-		"@typescript-eslint/eslint-plugin": "^5.59.7",
-		"@typescript-eslint/parser": "^5.59.7",
-		"eslint": "^8.41.0",
-		"eslint-config-prettier": "^8.8.0",
+		"@sveltejs/kit": "^1.25.0",
+		"@typescript-eslint/eslint-plugin": "^6.6.2",
+		"@typescript-eslint/parser": "^6.6.2",
+		"eslint": "^8.49.0",
+		"eslint-config-prettier": "^9.0.0",
 		"eslint-plugin-svelte3": "^4.0.0",
-		"prettier": "^2.8.8",
-		"prettier-plugin-svelte": "^2.10.0",
-		"svelte": "^3.59.1",
-		"tslib": "^2.5.2",
-		"typescript": "^5.0.4",
-		"vite": "^4.3.8"
+		"prettier": "^3.0.3",
+		"prettier-plugin-svelte": "^3.0.3",
+		"svelte": "^4.2.1",
+		"tslib": "^2.6.2",
+		"typescript": "^5.2.2",
+		"vite": "^4.4.9"
 	},
 	"dependencies": {
-		"@mailvideo/embed": "^0.0.33"
+		"@mailvideo/embed": "^0.1.0"
 	}
 }

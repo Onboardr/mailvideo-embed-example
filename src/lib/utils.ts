@@ -13,10 +13,10 @@ export const getMailVideoOptions = (): {
 
 	if (!publishableKey || !tenantId || !accountId) {
 		alert(
-			'Missing required parameters: publishableKey, tenantId, accountId',
+			'Missing required search parameters: publishableKey, tenantId, accountId',
 		);
 		throw new Error(
-			'Missing required parameters: publishableKey, tenantId, accountId',
+			'Missing required search parameters: publishableKey, tenantId, accountId',
 		);
 	}
 
