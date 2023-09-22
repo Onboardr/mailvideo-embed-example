@@ -29,7 +29,7 @@
 	const openAssociationLibrary = async () => {
 		console.log('openAssociationLibrary');
 		const mailvideo = await loadMailVideo(getMailVideoOptions());
-		await mailvideo.openAssociationLibrary({
+		await mailvideo.openPlatform({
 			company: {
 				id: 1,
 				name: 'Test Company',
