@@ -11,7 +11,6 @@
 	"svelteStrictMode": false,
 	"tabWidth": 4,
 	"trailingComma": "all",
-	"tsdoc": true,
 	"useTabs": true,
 	"printWidth": 80
 }

@@ -5,6 +5,7 @@ export const getMailVideoOptions = (): {
 	publishableKey: string;
 	tenantId: string | number;
 	accountId: string | number;
+	type: 'crm';
 } => {
 	const searchParams = new URLSearchParams(window.location.search);
 	const publishableKey = searchParams.get('publishableKey');
@@ -24,6 +25,7 @@ export const getMailVideoOptions = (): {
 		publishableKey,
 		tenantId,
 		accountId,
+		type: 'crm',
 	};
 };
 

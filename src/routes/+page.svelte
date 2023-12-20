@@ -7,12 +7,7 @@
 
 	const pickVideo = async () => {
 		console.log('pickVideo');
-		const { publishableKey, tenantId, accountId } = getMailVideoOptions();
-		const mailvideo = await loadMailVideo({
-			publishableKey,
-			tenantId,
-			accountId,
-		});
+		const mailvideo = await loadMailVideo(getMailVideoOptions());
 		const [video] = await mailvideo.pickVideo();
 		response = video;
 		console.log('pickVideo:response', response);
@@ -20,12 +15,7 @@
 
 	const pickVideoTemplate = async () => {
 		console.log('pickVideoTemplate');
-		const { publishableKey, tenantId, accountId } = getMailVideoOptions();
-		const mailvideo = await loadMailVideo({
-			publishableKey,
-			tenantId,
-			accountId,
-		});
+		const mailvideo = await loadMailVideo(getMailVideoOptions());
 		const [video] = await mailvideo.pickVideoTemplate({
 			person: {
 				id: '{{personId}}',
@@ -37,12 +27,7 @@
 
 	const openPlatform = async () => {
 		console.log('openPlatform');
-		const { publishableKey, tenantId, accountId } = getMailVideoOptions();
-		const mailvideo = await loadMailVideo({
-			publishableKey,
-			tenantId,
-			accountId,
-		});
+		const mailvideo = await loadMailVideo(getMailVideoOptions());
 		await mailvideo.openPlatform();
 	};
 
@@ -51,23 +36,13 @@
 		if (!response) {
 			return;
 		}
-		const { publishableKey, tenantId, accountId } = getMailVideoOptions();
-		const mailvideo = await loadMailVideo({
-			publishableKey,
-			tenantId,
-			accountId,
-		});
+		const mailvideo = await loadMailVideo(getMailVideoOptions());
 		await mailvideo.openVideo({ videoId: response.id });
 	};
 
 	const openAssociationLibrary = async () => {
 		console.log('openAssociationLibrary');
-		const { publishableKey, tenantId, accountId } = getMailVideoOptions();
-		const mailvideo = await loadMailVideo({
-			publishableKey,
-			tenantId,
-			accountId,
-		});
+		const mailvideo = await loadMailVideo(getMailVideoOptions());
 		const searchParams = new URLSearchParams(window.location.search);
 
 		const companyId = convertValue(searchParams.get('companyId'));
@@ -84,14 +59,14 @@
 				? {
 						id: companyId,
 						name: companyName,
-				  }
+					}
 				: undefined;
 		const person =
 			personId && personName
 				? {
 						id: personId,
 						name: personName,
-				  }
+					}
 				: undefined;
 		if (!person && !company) {
 			return alert(

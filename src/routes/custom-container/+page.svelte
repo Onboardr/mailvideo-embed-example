@@ -7,12 +7,7 @@
 	let response: PickVideoResponse | undefined;
 
 	const openIframe = async () => {
-		const { publishableKey, tenantId, accountId } = getMailVideoOptions();
-		const mailvideo = await loadMailVideo({
-			publishableKey,
-			tenantId,
-			accountId,
-		});
+		const mailvideo = await loadMailVideo(getMailVideoOptions());
 
 		[response] = await mailvideo.pickVideo({
 			divElement: customContainer,

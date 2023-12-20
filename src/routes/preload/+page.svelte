@@ -1,14 +1,14 @@
 <script lang="ts">
 	import {
 		loadMailVideo,
-		type MailVideoInterface,
+		type MailVideoEmbedInterface,
 		type PickVideoResponse,
 	} from '@mailvideo/embed';
 	import { getMailVideoOptions } from '$lib/utils';
 	import ResponseView from '$lib/ResponseView.svelte';
 	import { onMount } from 'svelte';
 
-	let mailvideo: MailVideoInterface | undefined;
+	let mailvideo: MailVideoEmbedInterface | undefined;
 	let response: PickVideoResponse | undefined;
 
 	onMount(async () => {
@@ -18,6 +18,7 @@
 			tenantId,
 			accountId,
 			preload: true,
+			type: 'crm',
 		});
 	});
 
